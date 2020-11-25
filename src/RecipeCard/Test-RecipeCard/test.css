@@ -34,3 +34,11 @@
     opacity: 0.6;
     border-radius: 5%;
 }
+
+.star {
+    background-image: url('gce4obdcd.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 20px;
+    width: 20px;
+}
