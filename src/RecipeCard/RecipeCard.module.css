@@ -6,7 +6,7 @@
     min-height: 350px;
     max-width: 320px;
     max-height: 350px;
-    background-image: url('./Test-RecipeCard/Eggs-Benedict.jpg');
+    background-image: url('Eggs-Benedict.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -17,7 +17,7 @@
     position: absolute;
     right: 5%;
     top: 5%;
-    background-image: url('./Test-RecipeCard/non-veg.jpg');
+    background-image: url('non-veg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-width: 30px;
