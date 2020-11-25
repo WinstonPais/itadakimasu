@@ -1,0 +1,36 @@
+.card {
+    border: 1px solid black;
+    box-shadow: 0.25em 0.25em 2px grey;
+    border-radius: 5%;
+    min-width: 320px;
+    min-height: 350px;
+    max-width: 320px;
+    max-height: 350px;
+    background-image: url('Eggs-Benedict.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.VegNonVegLabel {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background-image: url('non-veg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.greyTranslucentSection {
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    border-radius: 5%;
+}
