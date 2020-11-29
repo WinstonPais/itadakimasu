@@ -1,0 +1,79 @@
+.card {
+    border: 1px solid black;
+    box-shadow: 0.25em 0.25em 2px grey;
+    border-radius: 5%;
+    min-width: 320px;
+    min-height: 350px;
+    max-width: 320px;
+    max-height: 350px;
+    background-image: url('Eggs-Benedict.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.VegNonVegLabel {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background-image: url('non-veg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.greyTranslucentSection {
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.recipetitle {
+    position: absolute;
+    font-size: 25px;
+    color: azure;
+    top: 5%;
+    left:3%;
+}
+
+.starlist{
+    position: absolute;
+    top: 9%;
+    right: 6%;
+}
+
+.ingredientslist{
+    position: absolute;
+    top:35%;
+    left:7%;
+}
+
+.ppandname {
+    position: absolute;
+    bottom:5%;
+    left:7%;
+}
+.profilepicture{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: url('./profilepicture.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.profilename{
+    margin-top: 7px;
+    margin-left: 3px;
+    color: azure;
+}
