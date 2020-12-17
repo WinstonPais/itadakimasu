@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/itadakimasu/static/css/main.108e89c7.chunk.css",
+    "main.js": "/itadakimasu/static/js/main.c9f5c745.chunk.js",
+    "main.js.map": "/itadakimasu/static/js/main.c9f5c745.chunk.js.map",
+    "runtime-main.js": "/itadakimasu/static/js/runtime-main.25e299d2.js",
+    "runtime-main.js.map": "/itadakimasu/static/js/runtime-main.25e299d2.js.map",
+    "static/js/2.ad654123.chunk.js": "/itadakimasu/static/js/2.ad654123.chunk.js",
+    "static/js/2.ad654123.chunk.js.map": "/itadakimasu/static/js/2.ad654123.chunk.js.map",
+    "static/js/3.504c0fba.chunk.js": "/itadakimasu/static/js/3.504c0fba.chunk.js",
+    "static/js/3.504c0fba.chunk.js.map": "/itadakimasu/static/js/3.504c0fba.chunk.js.map",
+    "index.html": "/itadakimasu/index.html",
+    "static/css/main.108e89c7.chunk.css.map": "/itadakimasu/static/css/main.108e89c7.chunk.css.map",
+    "static/js/2.ad654123.chunk.js.LICENSE.txt": "/itadakimasu/static/js/2.ad654123.chunk.js.LICENSE.txt",
+    "static/media/RecipeCard.module.css": "/itadakimasu/static/media/profilepicture.7e2ebc44.jpg",
+    "static/media/StarRating.module.css": "/itadakimasu/static/media/star.5f286924.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.25e299d2.js",
+    "static/js/2.ad654123.chunk.js",
+    "static/css/main.108e89c7.chunk.css",
+    "static/js/main.c9f5c745.chunk.js"
+  ]
+}
