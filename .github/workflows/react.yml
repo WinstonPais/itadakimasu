@@ -30,18 +30,5 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run the tests and generate coverage report
-      run: npm test -- --coverage
-    
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-
     - name: Build
       run: npm run build
-    
-    - name: Deploy to GH Pages
-      run: |
-        git config --global user.email ${{ secrets.EMAIL_GITHUB }}
-        git config --global user.name ${{ secrets.USERNAME_GITHUB }}
-        git remote set-url origin https://${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}@github.com/${{ secrets.USERNAME_GITHUB }}/itadakimasu.git
-        npm run deploy
