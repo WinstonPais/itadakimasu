@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classes from './App.module.css';
+// import classes from './App.module.css';
 import RecipeCard from './RecipeCard/RecipeCard';
 import NavBar from './NavBar/NavBar';
 

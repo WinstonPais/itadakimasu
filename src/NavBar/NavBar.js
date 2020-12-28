@@ -3,11 +3,9 @@ import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
     NavLink,
-    NavbarText,
     Button
   } from 'reactstrap';
 import NavBarLogo from './NavBarLogo.png';
@@ -33,7 +31,7 @@ const NavBar = ( props ) => {
         <Fragment>
       <Navbar sticky="top" className={navbar ? [classes.navbarcustom,classes.navbarActive].join(' ') : classes.navbarcustom} dark expand="md">
         {/* <NavbarBrand href="/">reactstrap</NavbarBrand> */}
-        <a className={"navbar-brand "+classes.anchorParent} href="#">
+        <a className={"navbar-brand "+classes.anchorParent} href="https://www.google.com/">
             <img src={NavBarLogo} width="70" height="70" className={"d-inline-block align-top "+ classes.imageMargin} alt=""/>
             <span className={[classes.anchorChildren,classes.anchorspan].join(' ')}>Itadakimasu</span>
         </a>
@@ -41,13 +39,13 @@ const NavBar = ( props ) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className={"ml-auto "+classes.MainNav} navbar>
             <NavItem>
-              <NavLink href="#">Home</NavLink>
+              <NavLink href="https://www.google.com/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Recipes</NavLink>
+              <NavLink href="https://www.google.com/">Recipes</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Contact</NavLink>
+              <NavLink href="https://www.google.com/">Contact</NavLink>
             </NavItem>
             <NavItem>
                 <Button className={classes.buttonLogin} color="warning">Login</Button>
@@ -56,42 +54,6 @@ const NavBar = ( props ) => {
         </Collapse>
       </Navbar>
       </Fragment>
-        // <nav className={"navbar sticky-top navbar-expand-lg "+classes.navbarcustom}>
-            // <a className={"navbar-brand "+classes.anchorParent} href="#">
-            //     <img src={NavBarLogo} width="70" height="70" className={"d-inline-block align-top "+ classes.imageMargin} alt=""/>
-            //     <span className={[classes.anchorChildren,classes.anchorspan].join(' ')}>Itadakimasu</span>
-            // </a>
-
-        //     <button className={"navbar-toggler "+classes.navbuttoncolor} 
-        //             type="button" 
-        //             data-toggle="collapse" 
-        //             data-target="#navbarText" 
-        //             aria-controls="navbarText" 
-        //             aria-expanded="false" 
-        //             aria-label="Toggle navigation">
-        //         <span className="navbar-toggler-icon"/>
-        //     </button>
-
-            
-        //     <div className="collapse navbar-collapse" id="navbarText">
-        //         <div className="navbar-nav ml-auto">
-        //             <ul className="navbar-nav">
-        //                 <li className="nav-item active">
-        //                 <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                 <a className="nav-link" href="#">Features</a>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                 <a className="nav-link" href="#">Pricing</a>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                 <a className="nav-link" href="#">About</a>
-        //                 </li>
-        //             </ul>
-        //         </div>
-        //     </div>
-        // </nav>
     )
 }
 
