@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
-// import classes from './App.module.css';
-import RecipeCard from './RecipeCard/RecipeCard'
+import classes from './App.module.css';
+import RecipeCard from './RecipeCard/RecipeCard';
+import NavBar from './NavBar/NavBar';
 
 class App extends Component {
   render(){
     return(
       <div>
-        <RecipeCard></RecipeCard>
+        <NavBar/>
+        <RecipeCard/>
+        <RecipeCard/>
+        <RecipeCard/>
+
+        <RecipeCard/>
+        <RecipeCard/>
+        <RecipeCard/>
+        <RecipeCard/>
+        <RecipeCard/>
+        <RecipeCard/>
       </div>
     )
   }

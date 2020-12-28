@@ -1,0 +1,24 @@
+.navbarcustom {
+    background: rgba(50, 30, 70, 1);
+}
+
+.imageMargin {
+    margin-right: 10px;
+}
+
+.anchorParent{
+    position: relative;
+}
+
+.anchorChildren{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.anchorspan {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    font-size: 150%;
+}
