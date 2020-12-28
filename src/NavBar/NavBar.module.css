@@ -1,6 +1,14 @@
 .navbarcustom {
-    background: rgba(50, 30, 70, 1);
+    margin-top: 1em;
+    background: transparent;
+    
 }
+
+.navbarActive {
+    background: black;
+    color: white !important;
+}
+
 
 .imageMargin {
     margin-right: 10px;
@@ -21,4 +29,21 @@
     display: inline-flex;
     align-items: center;
     font-size: 150%;
+}
+
+.navbuttoncolor{
+    background-color: black;
+}
+
+.buttonLogin {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px !important;
+    font-size: 110% !important;
+}
+
+.MainNav *{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 110%;
 }
