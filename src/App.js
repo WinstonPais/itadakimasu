@@ -7,6 +7,7 @@ class App extends Component {
   render(){
     return(
       <div>
+        <RecipeCard/>
         <Footer />
       </div>
     )
