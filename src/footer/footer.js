@@ -13,18 +13,18 @@ const Footer = () => {
     return(
         <div className={classes.contain}>
             <div className="row">
-                    <img src={pizza} />
-                    <img src={burger} />
-                    <img src={roll} />
-                    <img src={beef} />
-                    <img src={sushi} />
-                    <img src={noodles} />
+                    <img src={pizza} alt="" />
+                    <img src={burger} alt="" />
+                    <img src={roll} alt="" />
+                    <img src={beef} alt="" />
+                    <img src={sushi} alt="" />
+                    <img src={noodles} alt="" />
             </div>
             <div className={classes.footer}>
                 <div className="container">
                     <div className="row">
                         <div className="col-offset-1">
-                            <img src={logo} />
+                            <img src={logo} alt="" />
                         </div>
                         <div className="col-sm-2">
                             <h3 className={classes.text1}>Itadakimasu</h3>
