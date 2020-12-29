@@ -12,7 +12,7 @@ class Footer extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-offset-1">
-                                <img src={logo} />
+                                <img src={logo} alt="" />
                             </div>
                             <div className="col-sm-2">
                                 <h3 className={classes.text1}>Itadakimasu</h3>
