@@ -1,32 +1,28 @@
 {
   "files": {
-    "main.css": "/itadakimasu/static/css/main.1f8165f9.chunk.css",
-    "main.js": "/itadakimasu/static/js/main.81711390.chunk.js",
-    "main.js.map": "/itadakimasu/static/js/main.81711390.chunk.js.map",
-    "runtime-main.js": "/itadakimasu/static/js/runtime-main.1f83ed6b.js",
-    "runtime-main.js.map": "/itadakimasu/static/js/runtime-main.1f83ed6b.js.map",
-    "static/js/2.19bf0e15.chunk.js": "/itadakimasu/static/js/2.19bf0e15.chunk.js",
-    "static/js/2.19bf0e15.chunk.js.map": "/itadakimasu/static/js/2.19bf0e15.chunk.js.map",
-    "static/js/3.48a6d4aa.chunk.js": "/itadakimasu/static/js/3.48a6d4aa.chunk.js",
-    "static/js/3.48a6d4aa.chunk.js.map": "/itadakimasu/static/js/3.48a6d4aa.chunk.js.map",
+    "main.css": "/itadakimasu/static/css/main.34323503.chunk.css",
+    "main.js": "/itadakimasu/static/js/main.e3ad9805.chunk.js",
+    "main.js.map": "/itadakimasu/static/js/main.e3ad9805.chunk.js.map",
+    "runtime-main.js": "/itadakimasu/static/js/runtime-main.d33b9634.js",
+    "runtime-main.js.map": "/itadakimasu/static/js/runtime-main.d33b9634.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/itadakimasu/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.66092e65.chunk.js": "/itadakimasu/static/js/2.66092e65.chunk.js",
+    "static/js/2.66092e65.chunk.js.map": "/itadakimasu/static/js/2.66092e65.chunk.js.map",
+    "static/js/3.821f9489.chunk.js": "/itadakimasu/static/js/3.821f9489.chunk.js",
+    "static/js/3.821f9489.chunk.js.map": "/itadakimasu/static/js/3.821f9489.chunk.js.map",
     "index.html": "/itadakimasu/index.html",
-    "static/css/main.1f8165f9.chunk.css.map": "/itadakimasu/static/css/main.1f8165f9.chunk.css.map",
-    "static/js/2.19bf0e15.chunk.js.LICENSE.txt": "/itadakimasu/static/js/2.19bf0e15.chunk.js.LICENSE.txt",
+    "static/css/2.1a02f21c.chunk.css.map": "/itadakimasu/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.34323503.chunk.css.map": "/itadakimasu/static/css/main.34323503.chunk.css.map",
+    "static/js/2.66092e65.chunk.js.LICENSE.txt": "/itadakimasu/static/js/2.66092e65.chunk.js.LICENSE.txt",
     "static/media/RecipeCard.module.css": "/itadakimasu/static/media/profilepicture.7e2ebc44.jpg",
-    "static/media/beef.53196d1b.jpeg": "/itadakimasu/static/media/beef.53196d1b.jpeg",
-    "static/media/footer.module.css": "/itadakimasu/static/media/bg.c3ce18be.jpg",
-    "static/media/burger.8749579a.jpeg": "/itadakimasu/static/media/burger.8749579a.jpeg",
-    "static/media/logo.8c084263.png": "/itadakimasu/static/media/logo.8c084263.png",
-    "static/media/noodles.122415b6.jpg": "/itadakimasu/static/media/noodles.122415b6.jpg",
-    "static/media/pizza.c34f8f20.jpg": "/itadakimasu/static/media/pizza.c34f8f20.jpg",
-    "static/media/roll.26480ad0.jpg": "/itadakimasu/static/media/roll.26480ad0.jpg",
-    "static/media/StarRating.module.css": "/itadakimasu/static/media/star.5f286924.png",
-    "static/media/sushi.88710b77.jpg": "/itadakimasu/static/media/sushi.88710b77.jpg"
+    "static/media/NavBarLogo.4101792c.png": "/itadakimasu/static/media/NavBarLogo.4101792c.png",
+    "static/media/StarRating.module.css": "/itadakimasu/static/media/star.5f286924.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1f83ed6b.js",
-    "static/js/2.19bf0e15.chunk.js",
-    "static/css/main.1f8165f9.chunk.css",
-    "static/js/main.81711390.chunk.js"
+    "static/js/runtime-main.d33b9634.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.66092e65.chunk.js",
+    "static/css/main.34323503.chunk.css",
+    "static/js/main.e3ad9805.chunk.js"
   ]
 }
