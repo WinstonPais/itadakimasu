@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Row, Col } from 'reactstrap';
 import RecipeCard from './../RecipeCard/RecipeCard';
 import classes from './Grid.module.css';
