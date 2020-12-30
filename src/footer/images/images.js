@@ -24,15 +24,14 @@ const responsive = {
   }
 };
 
+const mycarasolImages = [pizza,beef,burger,noodles,sushi,roll]
+
 function Imageslist() {
   return(
     <Carousel infinite={true} autoPlay={true} responsive={responsive}>
-      <img className={classes.imag} src={pizza} alt="pizza" />
-      <img className={classes.imag} src={burger} alt="burger" />
-      <img className={classes.imag} src={roll} alt="roll" />
-      <img className={classes.imag} src={beef} alt="beef" />
-      <img className={classes.imag} src={sushi} alt="sushi" />
-      <img className={classes.imag} src={noodles} alt="noodles" />
+      {mycarasolImages.map( (item,index) =>{
+        return <img className={classes.imag} key={item+index} src={item} alt={item} />
+      })}
     </Carousel>
   );  
 }
