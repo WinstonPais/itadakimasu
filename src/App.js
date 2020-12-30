@@ -3,12 +3,14 @@ import React, { Component } from 'react';
 import NavBar from './NavBar/NavBar';
 import RecipeCard from './RecipeCard/RecipeCard';
 import Footer from './footer/footer';
+import HomeCarousel from './homecarousel/homecarousel';
 
 class App extends Component {
   render(){
     return(
       <div>
         <NavBar/>
+        <HomeCarousel />
         <RecipeCard/>
         <RecipeCard/>
         <RecipeCard/>
