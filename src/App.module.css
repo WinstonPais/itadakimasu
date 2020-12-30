@@ -1,3 +1,8 @@
+.homeCarousel {
+    position: relative;
+    z-index: 1;
+}
+
 .whiteText {
     color: white !important;
 }
@@ -9,6 +14,7 @@
     border-bottom: 2px solid #fff; 
     margin: auto; 
 }
+
 .featured { 
     display: flex; 
     flex-direction: row; 
