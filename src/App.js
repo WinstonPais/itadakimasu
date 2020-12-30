@@ -11,12 +11,14 @@ class App extends Component {
     return(
       <div>
         <NavBar/>
-        <HomeCarousel className={classes.homeCarousel}/>
-        <Container>
-          <h4 className={[classes.whiteText,classes.featured].join(' ')}>&nbsp;&nbsp;Featured &nbsp;&nbsp;</h4>
-          <Grid/>
-        </Container>
-        <Footer />
+        <HomeCarousel/>
+        <div className={classes.makePositionRelative}>
+          <Container className={classes.gridTopMargin}>
+            <h4 className={[classes.whiteText,classes.featured].join(' ')}>&nbsp;&nbsp;Featured &nbsp;&nbsp;</h4>
+            <Grid/>
+          </Container>
+          <Footer />
+        </div>
       </div>
     )
   }

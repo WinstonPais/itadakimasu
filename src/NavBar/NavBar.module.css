@@ -11,6 +11,7 @@
 .navbarActive {
     background: black;
     color: white !important;
+    margin-top: 0 !important;
 }
 
 

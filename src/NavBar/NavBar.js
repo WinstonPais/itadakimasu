@@ -29,7 +29,7 @@ const NavBar = ( props ) => {
     const toggle = () => setIsOpen(!isOpen);
     return(
         <Fragment>
-      <Navbar sticky="top" className={navbar ? [classes.navbarcustom,classes.navbarActive].join(' ') : classes.navbarcustom} dark expand="md">
+      <Navbar fixed="top" className={navbar ? [classes.navbarcustom,classes.navbarActive].join(' ') : classes.navbarcustom} dark expand="md">
         {/* <NavbarBrand href="/">reactstrap</NavbarBrand> */}
         <a className={"navbar-brand "+classes.anchorParent} href="https://www.google.com/">
             <img src={NavBarLogo} width="70" height="70" className={"d-inline-block align-top "+ classes.imageMargin} alt=""/>

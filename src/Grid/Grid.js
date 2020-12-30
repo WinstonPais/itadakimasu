@@ -5,15 +5,14 @@ import classes from './Grid.module.css';
 
 const Grid = (props) => {
     return(
-        <Fragment>
+        <div className={classes.bottomMargin}> 
             {[1,2].map((itemi)=>{
                 return (
-                    <Row key={itemi} className={classes.rowMargin}>
+                    <Row key={itemi}>
                         {[1,2,3].map((itemj)=>{
                             return (
                                 <Col key={itemi+itemj} 
                                     xs="12" 
-                                    sm="6" 
                                     md="4" >
                                         <RecipeCard />
                                 </Col>
@@ -22,7 +21,7 @@ const Grid = (props) => {
                     </Row>
                 )
             })}
-        </Fragment>
+        </div>
     );
 }
 

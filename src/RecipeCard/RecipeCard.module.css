@@ -2,15 +2,15 @@
     border: 1px solid black;
     box-shadow: 0.25em 0.25em 2px grey;
     border-radius: 5%;
-    min-width: 320px;
+    width: 100%;
     min-height: 350px;
-    max-width: 320px;
     max-height: 350px;
     background-image: url('Eggs-Benedict.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
     overflow: hidden;
+    margin-bottom: 2em;
 }
 
 .VegNonVegLabel {

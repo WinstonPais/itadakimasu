@@ -1,6 +1,9 @@
-.homeCarousel {
+.makePositionRelative{
     position: relative;
-    z-index: 1;
+}
+
+.gridTopMargin{
+    margin-top: 4em;
 }
 
 .whiteText {
