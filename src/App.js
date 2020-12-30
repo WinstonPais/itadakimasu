@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import classes from './App.module.css';
+import classes from './App.module.css';
 import NavBar from './NavBar/NavBar';
 import RecipeCard from './RecipeCard/RecipeCard';
 import Footer from './footer/footer';
@@ -10,7 +10,7 @@ class App extends Component {
     return(
       <div>
         <NavBar/>
-        <HomeCarousel />
+        <HomeCarousel className={classes.homeCarousel}/>
         <RecipeCard/>
         <RecipeCard/>
         <RecipeCard/>

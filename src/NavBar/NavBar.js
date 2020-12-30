@@ -39,13 +39,13 @@ const NavBar = ( props ) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className={"ml-auto "+classes.MainNav} navbar>
             <NavItem>
-              <NavLink href="https://www.google.com/">Home</NavLink>
+              <NavLink className={classes.linktextColor} href="https://www.google.com/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://www.google.com/">Recipes</NavLink>
+              <NavLink className={classes.linktextColor} href="https://www.google.com/">Recipes</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://www.google.com/">Contact</NavLink>
+              <NavLink className={classes.linktextColor} href="https://www.google.com/">Contact</NavLink>
             </NavItem>
             <NavItem>
                 <Button className={classes.buttonLogin} color="warning">Login</Button>

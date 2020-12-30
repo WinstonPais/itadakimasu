@@ -1,7 +1,11 @@
 .navbarcustom {
     margin-top: 1em;
     background: transparent;
-    
+    z-index: 2;
+}
+
+.linktextColor {
+    color: seashell !important;
 }
 
 .navbarActive {
