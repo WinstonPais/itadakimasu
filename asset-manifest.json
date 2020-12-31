@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/itadakimasu/static/css/main.b7997b51.chunk.css",
-    "main.js": "/itadakimasu/static/js/main.59637175.chunk.js",
-    "main.js.map": "/itadakimasu/static/js/main.59637175.chunk.js.map",
-    "runtime-main.js": "/itadakimasu/static/js/runtime-main.ca8c5700.js",
-    "runtime-main.js.map": "/itadakimasu/static/js/runtime-main.ca8c5700.js.map",
+    "main.css": "/itadakimasu/static/css/main.5b6d9d45.chunk.css",
+    "main.js": "/itadakimasu/static/js/main.9aa666da.chunk.js",
+    "main.js.map": "/itadakimasu/static/js/main.9aa666da.chunk.js.map",
+    "runtime-main.js": "/itadakimasu/static/js/runtime-main.bbf16b6a.js",
+    "runtime-main.js.map": "/itadakimasu/static/js/runtime-main.bbf16b6a.js.map",
     "static/css/2.a1da8d8b.chunk.css": "/itadakimasu/static/css/2.a1da8d8b.chunk.css",
-    "static/js/2.9664e79e.chunk.js": "/itadakimasu/static/js/2.9664e79e.chunk.js",
-    "static/js/2.9664e79e.chunk.js.map": "/itadakimasu/static/js/2.9664e79e.chunk.js.map",
-    "static/js/3.c4996454.chunk.js": "/itadakimasu/static/js/3.c4996454.chunk.js",
-    "static/js/3.c4996454.chunk.js.map": "/itadakimasu/static/js/3.c4996454.chunk.js.map",
+    "static/js/2.af0a4c4d.chunk.js": "/itadakimasu/static/js/2.af0a4c4d.chunk.js",
+    "static/js/2.af0a4c4d.chunk.js.map": "/itadakimasu/static/js/2.af0a4c4d.chunk.js.map",
+    "static/js/3.28af474b.chunk.js": "/itadakimasu/static/js/3.28af474b.chunk.js",
+    "static/js/3.28af474b.chunk.js.map": "/itadakimasu/static/js/3.28af474b.chunk.js.map",
     "index.html": "/itadakimasu/index.html",
     "static/css/2.a1da8d8b.chunk.css.map": "/itadakimasu/static/css/2.a1da8d8b.chunk.css.map",
-    "static/css/main.b7997b51.chunk.css.map": "/itadakimasu/static/css/main.b7997b51.chunk.css.map",
-    "static/js/2.9664e79e.chunk.js.LICENSE.txt": "/itadakimasu/static/js/2.9664e79e.chunk.js.LICENSE.txt",
+    "static/css/main.5b6d9d45.chunk.css.map": "/itadakimasu/static/css/main.5b6d9d45.chunk.css.map",
+    "static/js/2.af0a4c4d.chunk.js.LICENSE.txt": "/itadakimasu/static/js/2.af0a4c4d.chunk.js.LICENSE.txt",
     "static/media/RecipeCard.module.css": "/itadakimasu/static/media/profilepicture.7e2ebc44.jpg",
     "static/media/NavBarLogo.4101792c.png": "/itadakimasu/static/media/NavBarLogo.4101792c.png",
     "static/media/beef.cbc1d8b4.jpg": "/itadakimasu/static/media/beef.cbc1d8b4.jpg",
     "static/media/footer.module.css": "/itadakimasu/static/media/bg.c3ce18be.jpg",
     "static/media/burger.13d1ba11.jpeg": "/itadakimasu/static/media/burger.13d1ba11.jpeg",
+    "static/media/createbg.ab836737.png": "/itadakimasu/static/media/createbg.ab836737.png",
     "static/media/image1.ff91a2ca.jpg": "/itadakimasu/static/media/image1.ff91a2ca.jpg",
     "static/media/image2.5a883878.jpg": "/itadakimasu/static/media/image2.5a883878.jpg",
     "static/media/image3.8ea36e08.jpg": "/itadakimasu/static/media/image3.8ea36e08.jpg",
@@ -31,10 +32,10 @@
     "static/media/sushi.296cef42.jpg": "/itadakimasu/static/media/sushi.296cef42.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ca8c5700.js",
+    "static/js/runtime-main.bbf16b6a.js",
     "static/css/2.a1da8d8b.chunk.css",
-    "static/js/2.9664e79e.chunk.js",
-    "static/css/main.b7997b51.chunk.css",
-    "static/js/main.59637175.chunk.js"
+    "static/js/2.af0a4c4d.chunk.js",
+    "static/css/main.5b6d9d45.chunk.css",
+    "static/js/main.9aa666da.chunk.js"
   ]
 }
