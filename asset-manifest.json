@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/itadakimasu/static/css/main.5b6d9d45.chunk.css",
-    "main.js": "/itadakimasu/static/js/main.9aa666da.chunk.js",
-    "main.js.map": "/itadakimasu/static/js/main.9aa666da.chunk.js.map",
+    "main.js": "/itadakimasu/static/js/main.16576a1b.chunk.js",
+    "main.js.map": "/itadakimasu/static/js/main.16576a1b.chunk.js.map",
     "runtime-main.js": "/itadakimasu/static/js/runtime-main.bbf16b6a.js",
     "runtime-main.js.map": "/itadakimasu/static/js/runtime-main.bbf16b6a.js.map",
     "static/css/2.a1da8d8b.chunk.css": "/itadakimasu/static/css/2.a1da8d8b.chunk.css",
@@ -20,9 +20,9 @@
     "static/media/footer.module.css": "/itadakimasu/static/media/bg.c3ce18be.jpg",
     "static/media/burger.13d1ba11.jpeg": "/itadakimasu/static/media/burger.13d1ba11.jpeg",
     "static/media/createbg.ab836737.png": "/itadakimasu/static/media/createbg.ab836737.png",
-    "static/media/image1.ff91a2ca.jpg": "/itadakimasu/static/media/image1.ff91a2ca.jpg",
-    "static/media/image2.5a883878.jpg": "/itadakimasu/static/media/image2.5a883878.jpg",
-    "static/media/image3.8ea36e08.jpg": "/itadakimasu/static/media/image3.8ea36e08.jpg",
+    "static/media/image1.37af079b.png": "/itadakimasu/static/media/image1.37af079b.png",
+    "static/media/image2.307c28de.jpg": "/itadakimasu/static/media/image2.307c28de.jpg",
+    "static/media/image3.ba6f82c3.jpg": "/itadakimasu/static/media/image3.ba6f82c3.jpg",
     "static/media/logo.8c084263.png": "/itadakimasu/static/media/logo.8c084263.png",
     "static/media/noodles.68f30c3d.jpg": "/itadakimasu/static/media/noodles.68f30c3d.jpg",
     "static/media/pizza.c34f8f20.jpg": "/itadakimasu/static/media/pizza.c34f8f20.jpg",
@@ -36,6 +36,6 @@
     "static/css/2.a1da8d8b.chunk.css",
     "static/js/2.af0a4c4d.chunk.js",
     "static/css/main.5b6d9d45.chunk.css",
-    "static/js/main.9aa666da.chunk.js"
+    "static/js/main.16576a1b.chunk.js"
   ]
 }
