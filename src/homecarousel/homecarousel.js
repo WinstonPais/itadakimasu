@@ -11,13 +11,13 @@ class HomeCarousel extends Component {
       return (
           <Carousel infiniteLoop={true} className={classes.homeCarousel} showArrows={true} showStatus={false} autoPlay={true} showThumbs={false}>
               <div>
-                  <img src={image1} alt=""/>
+                  <img className={classes.imageCss} src={image1} alt=""/>
               </div>
               <div>
-                  <img src={image2} alt=""/>
+                  <img className={classes.imageCss} src={image2} alt=""/>
               </div>
               <div>
-                  <img src={image3} alt=""/>
+                  <img className={classes.imageCss} src={image3} alt=""/>
               </div>
           </Carousel>
       );
