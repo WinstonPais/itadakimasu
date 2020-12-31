@@ -1,13 +1,13 @@
 .ig{
     width: 100%;
-    filter: brightness(70%);
+    filter: brightness(20%);
+    height: 70vh;
 }
 
 .centered{
     color: blanchedalmond;
     position: absolute;
-    font-size: 5.5vw;
-    font-size: 5.5vh;
+    font-size: 3.5vw;
     font-family: cursive;
     top: 50%;
     left: 50%;
@@ -21,5 +21,6 @@
 }
 
 .bm{
+    position: relative;
     margin-bottom: 4em;
 }

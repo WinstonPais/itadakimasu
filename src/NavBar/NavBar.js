@@ -32,7 +32,7 @@ const NavBar = ( props ) => {
       <Navbar fixed="top" className={navbar ? [classes.navbarcustom,classes.navbarActive].join(' ') : classes.navbarcustom} dark expand="md">
         {/* <NavbarBrand href="/">reactstrap</NavbarBrand> */}
         <a className={"navbar-brand "+classes.anchorParent} href="https://www.google.com/">
-            <img src={NavBarLogo} width="70" height="70" className={"d-inline-block align-top "+ classes.imageMargin} alt=""/>
+            <img src={NavBarLogo} width="90vw" height="90vh" className={"d-inline-block align-top "+ classes.imageMargin} alt=""/>
             <span className={[classes.anchorChildren,classes.anchorspan].join(' ')}>Itadakimasu</span>
         </a>
         <NavbarToggler onClick={toggle} />

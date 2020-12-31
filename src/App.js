@@ -17,8 +17,8 @@ class App extends Component {
           <Container className={classes.gridTopMargin}>
             <h4 className={[classes.whiteText,classes.featured].join(' ')}>&nbsp;&nbsp;Featured &nbsp;&nbsp;</h4>
             <Grid/>
-            <CreateRecipes />
           </Container>
+          <CreateRecipes />
           <Footer />
         </div>
       </div>
