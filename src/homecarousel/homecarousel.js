@@ -9,7 +9,7 @@ import classes from './HomeCarousel.module.css';
 class HomeCarousel extends Component {
   render() {
       return (
-          <Carousel className={classes.homeCarousel} showArrows={true} showStatus={false} autoPlay={true} showThumbs={false}>
+          <Carousel infiniteLoop={true} className={classes.homeCarousel} showArrows={true} showStatus={false} autoPlay={true} showThumbs={false}>
               <div>
                   <img src={image1} alt=""/>
               </div>
