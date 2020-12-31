@@ -1,0 +1,25 @@
+.makePositionRelative{
+    position: relative;
+}
+
+.gridTopMargin{
+    margin-top: 4em;
+}
+
+.whiteText {
+    color: white !important;
+}
+
+.featured::before,
+.featured::after{
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 2px solid #fff; 
+    margin: auto; 
+}
+
+.featured { 
+    display: flex; 
+    flex-direction: row; 
+    margin-bottom: 1em;
+} 
