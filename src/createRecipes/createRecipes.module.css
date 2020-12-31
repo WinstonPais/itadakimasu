@@ -1,0 +1,25 @@
+.ig{
+    width: 100%;
+    filter: brightness(70%);
+}
+
+.centered{
+    color: blanchedalmond;
+    position: absolute;
+    font-size: 5.5vw;
+    font-size: 5.5vh;
+    font-family: cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container1{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bm{
+    margin-bottom: 4em;
+}

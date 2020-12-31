@@ -5,6 +5,7 @@ import Footer from './footer/footer';
 import HomeCarousel from './homecarousel/homecarousel';
 import Grid from './Grid/Grid';
 import { Container} from 'reactstrap';
+import CreateRecipes from './createRecipes/createRecipes';
 
 class App extends Component {
   render(){
@@ -16,6 +17,7 @@ class App extends Component {
           <Container className={classes.gridTopMargin}>
             <h4 className={[classes.whiteText,classes.featured].join(' ')}>&nbsp;&nbsp;Featured &nbsp;&nbsp;</h4>
             <Grid/>
+            <CreateRecipes />
           </Container>
           <Footer />
         </div>
