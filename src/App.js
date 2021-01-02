@@ -6,6 +6,7 @@ import HomeCarousel from './homecarousel/homecarousel';
 import Grid from './Grid/Grid';
 import { Container} from 'reactstrap';
 import UserProvider from './contexts/UserProvider'
+import CreateRecipes from './createRecipes/createRecipes';
 
 class App extends Component {
   render(){
@@ -18,6 +19,7 @@ class App extends Component {
                 <h4 className={[classes.whiteText,classes.featured].join(' ')}>&nbsp;&nbsp;Featured &nbsp;&nbsp;</h4>
                 <Grid/>
               </Container>
+              <CreateRecipes />
               <Footer />
             </div>
         </UserProvider>

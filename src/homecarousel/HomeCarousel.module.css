@@ -2,5 +2,9 @@
     position: relative;
     z-index: 1;
     top: 0;
-    filter: brightness(30%);
+    filter: brightness(50%);
+}
+
+.imageCss {
+    height: 90vh;
 }
