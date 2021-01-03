@@ -5,23 +5,24 @@ import Footer from './footer/footer';
 import HomeCarousel from './homecarousel/homecarousel';
 import Grid from './Grid/Grid';
 import { Container} from 'reactstrap';
+import UserProvider from './contexts/UserProvider'
 import CreateRecipes from './createRecipes/createRecipes';
 
 class App extends Component {
   render(){
     return(
-      <div>
-        <NavBar/>
-        <HomeCarousel/>
-        <div className={classes.makePositionRelative}>
-          <Container className={classes.gridTopMargin}>
-            <h4 className={[classes.whiteText,classes.featured].join(' ')}>&nbsp;&nbsp;Featured &nbsp;&nbsp;</h4>
-            <Grid/>
-          </Container>
-          <CreateRecipes />
-          <Footer />
-        </div>
-      </div>
+        <UserProvider>
+            <NavBar/>
+            <HomeCarousel/>
+            <div className={classes.makePositionRelative}>
+              <Container className={classes.gridTopMargin}>
+                <h4 className={[classes.whiteText,classes.featured].join(' ')}>&nbsp;&nbsp;Featured &nbsp;&nbsp;</h4>
+                <Grid/>
+              </Container>
+              <CreateRecipes />
+              <Footer />
+            </div>
+        </UserProvider>
     )
   }
 }
