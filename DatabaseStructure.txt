@@ -1,0 +1,28 @@
+{
+    "Users":{
+        "U1" : {
+            "Name":"Winston",
+            "ProfilePic":"obj",
+            "MyRecepies" : ["R1","R4"]
+        }
+    },
+    "Recepies":{
+        "R1":{
+            "Name":"Name",
+            "Ingedients":{
+                "Eggs":"2",
+                "flour":"1g"
+            },
+            "Description":"adgdsgadsahds",
+            "TotalRatings":45,
+            "RatingsReceived":10,
+            "Comments":{
+                "userid":{
+                    "Date":"date",
+                    "Comment":"agasga",
+                    "replies":{}
+                }
+            }
+        }
+    }
+}
