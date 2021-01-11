@@ -1,8 +1,9 @@
 {
     "Users":{
         "U1" : {
-            "Name":"Winston",
-            "ProfilePic":"obj",
+            "displayName":"Winston",
+            "email":"adf2.com",
+            "profilePicture":"url",
             "MyRecepies" : ["R1","R4"]
         }
     },

@@ -12,6 +12,8 @@ import NavBarLogo from './NavBarLogo.png';
 import classes from './NavBar.module.css';
 import { signInWithGoogle, logOut } from "./../firebase.config";
 import { UserContext } from '../contexts/UserProvider';
+import firebase from 'firebase/app';
+import 'firebase/database';
 
 const NavBar = ( props ) => {
     const user = useContext(UserContext);
@@ -19,12 +21,19 @@ const NavBar = ( props ) => {
     const [navbar, setNavBar] = useState(false);
     const [isUserAuth, setIsUserAuth] = useState(false);
 
+    // Login
     useEffect(() => {
       if (user) {
         setIsUserAuth(true);
+        firebase.database().ref('users/' + user.uid).set({
+          displayName: user.displayName, 
+          email: user.email,
+          profilePicture : user.photoURL
+        });
       }
     }, [user])
 
+    // LogOut
     useEffect(() => {
       if (!user) {
         setIsUserAuth(false);
