@@ -9,7 +9,9 @@
     },
     "Recepies":{
         "R1":{
+            "UserId":"U1",
             "Name":"Name",
+            "Type":"NonVeg",
             "Ingedients":{
                 "Eggs":"2",
                 "flour":"1g"
