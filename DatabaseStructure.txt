@@ -9,6 +9,7 @@
     },
     "Recepies":{
         "R1":{
+            "CoverImg":"imgurl",
             "UserId":"U1",
             "Name":"Name",
             "Type":"NonVeg",
