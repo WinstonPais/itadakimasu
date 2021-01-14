@@ -5,7 +5,6 @@
     width: 100%;
     min-height: 350px;
     max-height: 350px;
-    background-image: url('Eggs-Benedict.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -13,11 +12,10 @@
     margin-bottom: 2em;
 }
 
-.VegNonVegLabel {
+.FoodTypeLabel {
     position: absolute;
     right: 5%;
     top: 5%;
-    background-image: url('non-veg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-width: 30px;
@@ -67,7 +65,6 @@
     width: 40px;
     border-radius: 50%;
     border: 1px solid black;
-    background-image: url('./profilepicture.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
