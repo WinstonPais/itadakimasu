@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/itadakimasu/static/css/main.b0a54dbb.chunk.css",
-    "main.js": "/itadakimasu/static/js/main.fc146a20.chunk.js",
-    "main.js.map": "/itadakimasu/static/js/main.fc146a20.chunk.js.map",
+    "main.css": "/itadakimasu/static/css/main.114760d3.chunk.css",
+    "main.js": "/itadakimasu/static/js/main.ab02b097.chunk.js",
+    "main.js.map": "/itadakimasu/static/js/main.ab02b097.chunk.js.map",
     "runtime-main.js": "/itadakimasu/static/js/runtime-main.f01894fb.js",
     "runtime-main.js.map": "/itadakimasu/static/js/runtime-main.f01894fb.js.map",
     "static/css/2.a1da8d8b.chunk.css": "/itadakimasu/static/css/2.a1da8d8b.chunk.css",
-    "static/js/2.45273429.chunk.js": "/itadakimasu/static/js/2.45273429.chunk.js",
-    "static/js/2.45273429.chunk.js.map": "/itadakimasu/static/js/2.45273429.chunk.js.map",
+    "static/js/2.54a841ef.chunk.js": "/itadakimasu/static/js/2.54a841ef.chunk.js",
+    "static/js/2.54a841ef.chunk.js.map": "/itadakimasu/static/js/2.54a841ef.chunk.js.map",
     "static/js/3.96039921.chunk.js": "/itadakimasu/static/js/3.96039921.chunk.js",
     "static/js/3.96039921.chunk.js.map": "/itadakimasu/static/js/3.96039921.chunk.js.map",
     "index.html": "/itadakimasu/index.html",
     "static/css/2.a1da8d8b.chunk.css.map": "/itadakimasu/static/css/2.a1da8d8b.chunk.css.map",
-    "static/css/main.b0a54dbb.chunk.css.map": "/itadakimasu/static/css/main.b0a54dbb.chunk.css.map",
-    "static/js/2.45273429.chunk.js.LICENSE.txt": "/itadakimasu/static/js/2.45273429.chunk.js.LICENSE.txt",
+    "static/css/main.114760d3.chunk.css.map": "/itadakimasu/static/css/main.114760d3.chunk.css.map",
+    "static/js/2.54a841ef.chunk.js.LICENSE.txt": "/itadakimasu/static/js/2.54a841ef.chunk.js.LICENSE.txt",
     "static/media/1.2bfa84b1.jpg": "/itadakimasu/static/media/1.2bfa84b1.jpg",
     "static/media/2.ef566305.jpg": "/itadakimasu/static/media/2.ef566305.jpg",
     "static/media/3.71c51b0c.jpg": "/itadakimasu/static/media/3.71c51b0c.jpg",
     "static/media/4.51cfbc15.jpg": "/itadakimasu/static/media/4.51cfbc15.jpg",
     "static/media/5.2c71d513.jpg": "/itadakimasu/static/media/5.2c71d513.jpg",
     "static/media/6.004d07a5.jpg": "/itadakimasu/static/media/6.004d07a5.jpg",
-    "static/media/RecipeCard.module.css": "/itadakimasu/static/media/profilepicture.7e2ebc44.jpg",
     "static/media/NavBarLogo.4101792c.png": "/itadakimasu/static/media/NavBarLogo.4101792c.png",
     "static/media/footer.module.css": "/itadakimasu/static/media/bg.c3ce18be.jpg",
     "static/media/createbg.e4fb2c72.png": "/itadakimasu/static/media/createbg.e4fb2c72.png",
@@ -34,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.f01894fb.js",
     "static/css/2.a1da8d8b.chunk.css",
-    "static/js/2.45273429.chunk.js",
-    "static/css/main.b0a54dbb.chunk.css",
-    "static/js/main.fc146a20.chunk.js"
+    "static/js/2.54a841ef.chunk.js",
+    "static/css/main.114760d3.chunk.css",
+    "static/js/main.ab02b097.chunk.js"
   ]
 }
