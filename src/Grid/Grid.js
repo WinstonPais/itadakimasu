@@ -13,9 +13,8 @@ const Grid = (props) => {
         const fetchData = async () => {
             const db = firebase.database();
             let data = await db.ref("recipes").once('value');
-            console.log(data.val());
             data=data.val();
-            let reciparr=[[data['user1rep'],data['user2rep'],data['user3rep']],[data['user4rep'],data['user5rep'],data['user6rep']]];
+            const reciparr=[[data['user1rep'],data['user2rep'],data['user3rep']],[data['user4rep'],data['user5rep'],data['user6rep']]];
             setRecipeJson(reciparr);
         }
         fetchData();
