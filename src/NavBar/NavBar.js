@@ -67,13 +67,13 @@ const NavBar = ( props ) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className={"ml-auto "+classes.MainNav} navbar>
               <NavItem>
-                <NavLink className={classes.linktextColor} href="https://winstonpais.github.io/itadakimasu/">Home</NavLink>
+                <NavLink className={classes.linktextColor} href="/itadakimasu">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={classes.linktextColor} href="https://winstonpais.github.io/itadakimasu/">Recipes</NavLink>
+                <NavLink className={classes.linktextColor} href="/itadakimasu">Recipes</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={classes.linktextColor} href="https://winstonpais.github.io/itadakimasu/">Contact</NavLink>
+                <NavLink className={classes.linktextColor} href="/itadakimasu">Contact</NavLink>
               </NavItem>
               <NavItem>
                   { isUserAuth ? LogoutButton : loginButton }
