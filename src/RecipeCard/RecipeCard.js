@@ -17,7 +17,7 @@ const RecipeCard = ( props ) => {
         if(props.recipedata){
             const foodTypeParser = {
                 "NonVeg" : "https://firebasestorage.googleapis.com/v0/b/itadakimasu-development.appspot.com/o/non-veg.jpg?alt=media&token=964be78c-6ba5-48a4-9460-cda9f36f8f83",
-                "Veg" : ""
+                "Veg" : "https://firebasestorage.googleapis.com/v0/b/itadakimasu-development.appspot.com/o/veglogo.png?alt=media&token=0b8b4588-6ccb-4035-bae0-2419a1156fe4"
             }
             setrecipeName(props.recipedata["Name"]);
             setrecipeStars(Math.floor(props.recipedata["totalratings"]/props.recipedata["ratingsrecived"]));
