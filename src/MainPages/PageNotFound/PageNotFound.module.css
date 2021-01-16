@@ -1,0 +1,45 @@
+.plate {
+    height: 170px;
+    width: 170px;
+}
+
+.bg {
+    height: 100%;
+    background-image: url('./bgplate.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.maincontainer {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head404 {
+    font-size: 140px;
+}
+
+.tiltedbackground {
+    position:absolute;
+    top: 50%;
+    left:50%;
+    margin-left: -300px;
+    margin-top: -175px;
+    background-color:rgb(59, 156, 212);
+    height: 350px;
+    width: 600px;
+    clip-path: polygon(0 0,100% 30%,100% 90%, 0 100%);
+    transform: rotate(-20deg);
+    z-index: 0;
+}
+
+html,body {
+    height: 100%;
+}
