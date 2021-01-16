@@ -3,6 +3,8 @@ import React from 'react';
 import CardIngredients from './CardIngredients/CardIngredients'
 import StarRating from './StarRating/StarRating'
 import classes from './RecipeCard.module.css';
+import firebase from 'firebase/app';
+import 'firebase/database';
 
 const RecipeCard = ( props ) => {
     const [recipeName,setrecipeName] = React.useState("None");
@@ -23,14 +25,26 @@ const RecipeCard = ( props ) => {
             setrecipeStars(Math.floor(props.recipedata["totalratings"]/props.recipedata["ratingsrecived"]));
             settopIngredientsList(Object.keys(props.recipedata["ingredients"]).slice(0,3));
             setrecipeCoverImage(props.recipedata["coverimg"]);
-            setAuthorName("Temp2");
-            setAuthorPicture(props.recipedata["coverimg"]);
             setFoodType(foodTypeParser[props.recipedata["type"]]);
+            const fetchData = async () => {
+                const db = firebase.database();
+                let data = await db.ref("users/"+props.recipedata['authorId']).once('value');
+                data = data.val();
+                if(data){
+                    setAuthorName(data['displayName']);
+                    setAuthorPicture(data['profilePicture']);
+                }
+            }
+            fetchData();
         }
     },[props.recipedata])
 
+    const testfn = () => {
+        console.log("open page "+props.recipeId)
+    }
+
     return(
-        <div className={classes.card} style={{backgroundImage: `url(`+recipeCoverImage+`)`}}>
+        <div onClick={testfn} className={classes.card} style={{backgroundImage: `url(`+recipeCoverImage+`)`}}>
             <div className={classes.FoodTypeLabel} style={{backgroundImage: `url(`+foodType+`)`}}></div>
             <div className={classes.greyTranslucentSection}>
                 <strong className={classes.recipetitle}>{recipeName}</strong>

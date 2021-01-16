@@ -1,0 +1,19 @@
+.makeinline {
+    display: inline-block;
+}
+
+.profilepicture {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.verticalCenter {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
