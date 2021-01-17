@@ -39,29 +39,27 @@ const RecipeCard = ( props ) => {
         }
     },[props.recipedata])
 
-    const testfn = () => {
-        console.log("open page "+props.recipeId)
-    }
-
     return(
-        <div onClick={testfn} className={classes.card} style={{backgroundImage: `url(`+recipeCoverImage+`)`}}>
-            <div className={classes.FoodTypeLabel} style={{backgroundImage: `url(`+foodType+`)`}}></div>
-            <div className={classes.greyTranslucentSection}>
-                <strong className={classes.recipetitle}>{recipeName}</strong>
-                <div className={classes.starlist}>
-                    <StarRating stars={recipeStars}></StarRating>
-                </div>
-                <div className={classes.ingredientslist}>
-                    <CardIngredients ingedients={topIngredientsList} ></CardIngredients>
-                </div>
-                <div className={classes.ppandname}>
-                    <div className="row">
-                        <div className={classes.profilepicture} style={{backgroundImage: `url(`+authorPicture+`)`}}></div>
-                        <strong className={classes.profilename}>{authorName}</strong>
+        <a href="/recipe">
+            <div className={classes.card} style={{backgroundImage: `url(`+recipeCoverImage+`)`}}>
+                <div className={classes.FoodTypeLabel} style={{backgroundImage: `url(`+foodType+`)`}}></div>
+                <div className={classes.greyTranslucentSection}>
+                    <strong className={classes.recipetitle}>{recipeName}</strong>
+                    <div className={classes.starlist}>
+                        <StarRating stars={recipeStars}></StarRating>
+                    </div>
+                    <div className={classes.ingredientslist}>
+                        <CardIngredients ingedients={topIngredientsList} ></CardIngredients>
+                    </div>
+                    <div className={classes.ppandname}>
+                        <div className="row">
+                            <div className={classes.profilepicture} style={{backgroundImage: `url(`+authorPicture+`)`}}></div>
+                            <strong className={classes.profilename}>{authorName}</strong>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
     )
 }
 

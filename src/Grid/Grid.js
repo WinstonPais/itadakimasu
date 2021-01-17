@@ -13,8 +13,9 @@ const Grid = (props) => {
     React.useEffect(() => {
         const fetchData = async () => {
             const db = firebase.database();
-            let data = await db.ref("recipes").once('value');
+            let data = await db.ref('recipes').limitToFirst(6).once('value');
             data=data.val();
+            console.log(data);
             const reciparr=[
                 [data['user1rep'],data['user2rep'],data['user3rep']],
                 [data['user4rep'],data['user5rep'],data['user6rep']]
