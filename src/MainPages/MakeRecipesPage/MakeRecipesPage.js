@@ -26,15 +26,23 @@ const MakeRecipesPage = () => {
                     <Label for="description"><h1>Description</h1></Label>
                     <Input type="textarea" name="description" id="description" placeholder="Enter the Description" />
                 </FormGroup>
-                <FormGroup >
+                <FormGroup className={classes.title}>
+                    <Label for="title"><h1>Cooking time</h1></Label>
+                    <Input type="text" name="title" id="title" placeholder="Enter the Cooking Time" />
+                </FormGroup>
+                <FormGroup className={classes.title}>
+                    <Label for="title"><h1>Preparation time</h1></Label>
+                    <Input type="text" name="title" id="title" placeholder="Enter the Preparation Time" />
+                </FormGroup>
+                <FormGroup className={classes.title}>
+                    <Label for="title"><h1>Servings</h1></Label>
+                    <Input type="text" name="title" id="title" placeholder="Servings" />
+                </FormGroup>
+                {/* <FormGroup >
                     <Label className={classes.Ingredients} for="Ingredients"><h1>Ingredient</h1></Label>
                     <Button className={classes.addIng} color="warning">Add Ingredient</Button>
                     <Ingredients/>
-                </FormGroup>
-                <FormGroup className={classes.file1}>
-                    <Label for="exampleFile"><h1>Image</h1></Label>
-                    <Input type="file" name="file" id="exampleFile" />
-                </FormGroup>
+                </FormGroup> */}
                 <FormGroup className={classes.radio} tag="fieldset">
                     <FormGroup check>
                     <Label check>
