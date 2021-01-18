@@ -9,9 +9,15 @@ const ContactPage = () => {
         <Container className={classes.mycont} style={{position:'relative',marginTop:'25vh',}}>
             <Row className={classes.myRow}>
                 <Col style={{backgroundColor: 'rgb(39, 209, 221)'}} className={classes.myCol}>
+<<<<<<< Updated upstream
                     <a onClick={()=> window.open("https://github.com/WinstonPais/itadakimasu/issues","_blank")} >
                         <div className={classes.center} style={{height:'100%'}}>
                             <div>
+=======
+                    <a href="https://github.com/WinstonPais/itadakimasu/issues">
+                        <div className={classes.cc} style={{height:'100%'}}>
+                            <div style={{height:'100%'}}>
+>>>>>>> Stashed changes
                                 <img alt="asg" style={{height:'200px',width:'200px'}} src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" />
                                 <h3>Click Here to Report Issues</h3>
                             </div>
