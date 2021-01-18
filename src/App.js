@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import NavBar from './NavBar/NavBar';
 import UserProvider from './contexts/UserProvider';
 import Home from './MainPages/Home/Home';
+import MakeRecipesPage from './MainPages/MakeRecipesPage/MakeRecipesPage';
 import PageNotFound from './MainPages/PageNotFound/PageNotFound';
 import RecipeDetailsPage from './MainPages/RecipeDetailsPage/RecipeDetailsPage';
 import { Router, Route, Switch } from 'react-router';
@@ -34,6 +35,7 @@ class App extends Component {
         <Router history={history}>
             <Switch >
               <Route path="/itadakimasu" component={Home} exact />
+              <Route path="/itadakimasu/makerecipepage" component={MakeRecipesPage} exact />
               <Route path="/recipe/:id" component={RecipeDetailsPage} />
               <Route component={PageNotFound} />
             </Switch>
