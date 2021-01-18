@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/itadakimasu/static/css/main.95067f4a.chunk.css",
-    "main.js": "/itadakimasu/static/js/main.5a06e0c6.chunk.js",
-    "main.js.map": "/itadakimasu/static/js/main.5a06e0c6.chunk.js.map",
-    "runtime-main.js": "/itadakimasu/static/js/runtime-main.e6c44816.js",
-    "runtime-main.js.map": "/itadakimasu/static/js/runtime-main.e6c44816.js.map",
+    "main.css": "/itadakimasu/static/css/main.37e0ea96.chunk.css",
+    "main.js": "/itadakimasu/static/js/main.624a9714.chunk.js",
+    "main.js.map": "/itadakimasu/static/js/main.624a9714.chunk.js.map",
+    "runtime-main.js": "/itadakimasu/static/js/runtime-main.6c95674a.js",
+    "runtime-main.js.map": "/itadakimasu/static/js/runtime-main.6c95674a.js.map",
     "static/css/2.a1da8d8b.chunk.css": "/itadakimasu/static/css/2.a1da8d8b.chunk.css",
-    "static/js/2.f67da863.chunk.js": "/itadakimasu/static/js/2.f67da863.chunk.js",
-    "static/js/2.f67da863.chunk.js.map": "/itadakimasu/static/js/2.f67da863.chunk.js.map",
-    "static/js/3.7c7a8dc3.chunk.js": "/itadakimasu/static/js/3.7c7a8dc3.chunk.js",
-    "static/js/3.7c7a8dc3.chunk.js.map": "/itadakimasu/static/js/3.7c7a8dc3.chunk.js.map",
+    "static/js/2.cb8c6638.chunk.js": "/itadakimasu/static/js/2.cb8c6638.chunk.js",
+    "static/js/2.cb8c6638.chunk.js.map": "/itadakimasu/static/js/2.cb8c6638.chunk.js.map",
+    "static/js/3.d370370d.chunk.js": "/itadakimasu/static/js/3.d370370d.chunk.js",
+    "static/js/3.d370370d.chunk.js.map": "/itadakimasu/static/js/3.d370370d.chunk.js.map",
     "index.html": "/itadakimasu/index.html",
     "static/css/2.a1da8d8b.chunk.css.map": "/itadakimasu/static/css/2.a1da8d8b.chunk.css.map",
-    "static/css/main.95067f4a.chunk.css.map": "/itadakimasu/static/css/main.95067f4a.chunk.css.map",
-    "static/js/2.f67da863.chunk.js.LICENSE.txt": "/itadakimasu/static/js/2.f67da863.chunk.js.LICENSE.txt",
+    "static/css/main.37e0ea96.chunk.css.map": "/itadakimasu/static/css/main.37e0ea96.chunk.css.map",
+    "static/js/2.cb8c6638.chunk.js.LICENSE.txt": "/itadakimasu/static/js/2.cb8c6638.chunk.js.LICENSE.txt",
     "static/media/1.2bfa84b1.jpg": "/itadakimasu/static/media/1.2bfa84b1.jpg",
     "static/media/2.ef566305.jpg": "/itadakimasu/static/media/2.ef566305.jpg",
     "static/media/3.71c51b0c.jpg": "/itadakimasu/static/media/3.71c51b0c.jpg",
@@ -33,10 +33,10 @@
     "static/media/StarRating.module.css": "/itadakimasu/static/media/star.5f286924.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e6c44816.js",
+    "static/js/runtime-main.6c95674a.js",
     "static/css/2.a1da8d8b.chunk.css",
-    "static/js/2.f67da863.chunk.js",
-    "static/css/main.95067f4a.chunk.css",
-    "static/js/main.5a06e0c6.chunk.js"
+    "static/js/2.cb8c6638.chunk.js",
+    "static/css/main.37e0ea96.chunk.css",
+    "static/js/main.624a9714.chunk.js"
   ]
 }
