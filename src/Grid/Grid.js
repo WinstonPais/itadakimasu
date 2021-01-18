@@ -19,7 +19,6 @@ const Grid = (props) => {
         }
         fetchData();
     }, [])
-    
 
     return(
         <div className={classes.bottomMargin}> 
