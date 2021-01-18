@@ -5,6 +5,7 @@ import StarRating from './StarRating/StarRating'
 import classes from './RecipeCard.module.css';
 import firebase from 'firebase/app';
 import 'firebase/database';
+import { Link  } from 'react-router-dom'
 
 const RecipeCard = ( props ) => {
     const [recipeName,setrecipeName] = React.useState("None");
@@ -40,7 +41,7 @@ const RecipeCard = ( props ) => {
     },[props.recipedata])
 
     return(
-        <a href="/recipe">
+        <Link to={"/recipe/" + props.recipeId}>
             <div className={classes.card} style={{backgroundImage: `url(`+recipeCoverImage+`)`}}>
                 <div className={classes.FoodTypeLabel} style={{backgroundImage: `url(`+foodType+`)`}}></div>
                 <div className={classes.greyTranslucentSection}>
@@ -59,7 +60,7 @@ const RecipeCard = ( props ) => {
                     </div>
                 </div>
             </div>
-        </a>
+        </Link>
     )
 }
 

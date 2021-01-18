@@ -1,16 +1,16 @@
 import React from 'react'
 import { Comment } from 'semantic-ui-react';
 
-const SingleComment = () => {
+const SingleComment = (props) => {
     return (
         <Comment>
-          <Comment.Avatar src='https://react.semantic-ui.com/images/avatar/small/matt.jpg' />
+          <Comment.Avatar src={props.commentData['profilePicture']} />
           <Comment.Content>
-            <Comment.Author style={{color:'white'}} as='a'>Matt</Comment.Author>
-            <Comment.Text style={{color:'white'}}>How artistic!</Comment.Text>
-            <Comment.Actions>
+            <Comment.Author style={{color:'white'}} as='a'>{props.commentData['userName']}</Comment.Author>
+            <Comment.Text style={{color:'white'}}>{props.commentData['comment']}</Comment.Text>
+            {/* <Comment.Actions>
               <Comment.Action style={{color:'white'}}>Reply</Comment.Action>
-            </Comment.Actions>
+            </Comment.Actions> */}
           </Comment.Content>
         </Comment>
     )

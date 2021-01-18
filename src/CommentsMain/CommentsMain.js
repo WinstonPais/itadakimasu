@@ -1,60 +1,63 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Button, Comment, Form, Header } from 'semantic-ui-react';
 import SingleComment from './SingleComment/SingleComment';
+import { UserContext } from '../contexts/UserProvider';
+import firebase from 'firebase/app';
+import 'firebase/database';
 
-const CommentsMain = () => {
+const CommentsMain = (props) => {
+    const user = useContext(UserContext);
+    let [comments,setComments] = React.useState(null); 
+    let [currentComment,setCurrentComment] = React.useState(''); 
+
+    React.useEffect(() => {
+      if(props.commentdata){
+        let temp = () => {
+          return (
+            Object.keys(props.commentdata).map((keyName,keyIndex) =>{
+              return(
+                <div style={{marginTop:'2em'}}>
+                  <SingleComment commentData={props.commentdata[keyName]} />
+                </div>
+              )
+            })
+          )
+        }
+        setComments(temp);
+      }
+      
+      
+    },[props.commentdata])
+
+    const addComment = async () =>{
+      await firebase.database().ref('recipes/' + props.rId + '/comments/'+ user.uid+Date()).set({
+        comment: currentComment,
+        profilePicture: user.photoURL,
+        userName: user.displayName
+      });
+      document.getElementById('textareacomment').value = '';
+    }
+
+    const updateStateComment = (event) =>{
+      // console.log()
+      setCurrentComment(event.target.value)
+    }
+
 
     return (
         <Comment.Group>
         <Header style={{borderBottom:'1px solid white',color:'white'}} as='h3' dividing>
           Comments
         </Header>
-    
-        <SingleComment />
-    
-        <Comment>
-          <Comment.Avatar src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' />
-          <Comment.Content>
-            <Comment.Author as='a'>Elliot Fu</Comment.Author>
-            <Comment.Text>
-              <p>This has been very useful for my research. Thanks as well!</p>
-            </Comment.Text>
-            <Comment.Actions>
-              <Comment.Action>Reply</Comment.Action>
-            </Comment.Actions>
-          </Comment.Content>
-          <Comment.Group>
-            <Comment>
-              <Comment.Avatar src='https://react.semantic-ui.com/images/avatar/small/jenny.jpg' />
-              <Comment.Content>
-                <Comment.Author as='a'>Jenny Hess</Comment.Author>
-                <Comment.Text>Elliot you are always so right :)</Comment.Text>
-                <Comment.Actions>
-                  <Comment.Action>Reply</Comment.Action>
-                </Comment.Actions>
-              </Comment.Content>
-            </Comment>
-          </Comment.Group>
-        </Comment>
-    
-        <Comment>
-          <Comment.Avatar src='https://react.semantic-ui.com/images/avatar/small/joe.jpg' />
-          <Comment.Content>
-            <Comment.Author as='a'>Joe Henderson</Comment.Author>
-            <Comment.Metadata>
-              <div>5 days ago</div>
-            </Comment.Metadata>
-            <Comment.Text>Dude, this is awesome. Thanks so much</Comment.Text>
-            <Comment.Actions>
-              <Comment.Action>Reply</Comment.Action>
-            </Comment.Actions>
-          </Comment.Content>
-        </Comment>
-    
-        <Form reply>
-          <Form.TextArea />
-          <Button content='Add Reply' labelPosition='left' icon='edit' primary />
-        </Form>
+
+        {comments}
+
+        <div style={{marginTop:'2em'}}>
+          <Form reply>
+            <Form.TextArea onChange={updateStateComment} id="textareacomment" />
+            <Button onClick={addComment} content='Add Reply' labelPosition='left' icon='edit' primary />
+          </Form>
+        </div>
       </Comment.Group>
     )
 }
