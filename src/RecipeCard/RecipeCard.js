@@ -29,9 +29,11 @@ const RecipeCard = ( props ) => {
             setFoodType(foodTypeParser[props.recipedata["type"]]);
             const fetchData = async () => {
                 const db = firebase.database();
+                // console.log(props.recipedata)
                 let data = await db.ref("users/"+props.recipedata['authorId']).once('value');
                 data = data.val();
                 if(data){
+                    // console.log(data['displayName'])
                     setAuthorName(data['displayName']);
                     setAuthorPicture(data['profilePicture']);
                 }

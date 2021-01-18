@@ -55,7 +55,7 @@ const AllRecipesPage = () => {
         counter +=1 
         if (allrecipeJson){
             if (counter<=allrecipeJsonlength){
-                return <RecipeCard recipedata={allrecipeJson[allrecipeKeys[counter-1]]}/>
+                return <RecipeCard key={Date()} recipedata={allrecipeJson[allrecipeKeys[counter-1]]}/>
             }
             else{
                 return null

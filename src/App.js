@@ -4,6 +4,7 @@ import UserProvider from './contexts/UserProvider';
 import Home from './MainPages/Home/Home';
 import AllRecipesPage from './MainPages/AllRecipes/AllRecipes';
 import PageNotFound from './MainPages/PageNotFound/PageNotFound';
+import ContactPage from './MainPages/ContactPage/ContactPage';
 import RecipeDetailsPage from './MainPages/RecipeDetailsPage/RecipeDetailsPage';
 import { Router, Route, Switch } from 'react-router';
 import { createBrowserHistory } from 'history';
@@ -27,6 +28,7 @@ class App extends Component {
               <Route path="/itadakimasu" component={Home} exact />
               <Route path="/recipe/:id" component={RecipeDetailsPage} />
               <Route path="/allrecipes" component={AllRecipesPage} />
+              <Route path="/contact" component={ContactPage} />
               <Route component={PageNotFound} />
             </Switch>
         </Router>
