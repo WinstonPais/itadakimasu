@@ -70,7 +70,7 @@ const NavBar = ( props ) => {
                 <NavLink className={classes.linktextColor} href="/itadakimasu">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={classes.linktextColor} href="/itadakimasu">Recipes</NavLink>
+                <NavLink className={classes.linktextColor} href="/itadakimasu/recipe">Recipes</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className={classes.linktextColor} href="/itadakimasu">Contact</NavLink>

@@ -1,0 +1,55 @@
+.gridTopMargin{
+    margin-top: 4em;
+}
+
+.whiteText {
+    color: white !important;
+}
+
+.featured::before,
+.featured::after{
+    content: ""; 
+    flex: 1 1; 
+    margin: auto; 
+}
+
+.featured { 
+    display: flex; 
+    flex-direction: row; 
+    margin-bottom: 1em;
+} 
+.ig{
+    width: 100%;
+    filter: brightness(20%);
+    height: 70vh;
+}
+
+.centered{
+    color: blanchedalmond;
+    position: absolute;
+    font-size: 3.5vw;
+    font-family: cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container1{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bm{
+    position: relative;
+    margin-bottom: 4em;
+}
+
+.textbox{
+    width: auto;
+}
+
+.buttons{
+    margin-left: 10px;
+    width: 10%;
+}

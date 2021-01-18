@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import NavBar from './NavBar/NavBar';
 import UserProvider from './contexts/UserProvider';
 import Home from './MainPages/Home/Home';
+import AllRecipesPage from './MainPages/AllRecipes/AllRecipes';
 import PageNotFound from './MainPages/PageNotFound/PageNotFound';
 import RecipeDetailsPage from './MainPages/RecipeDetailsPage/RecipeDetailsPage';
 import { Router, Route, Switch } from 'react-router';
@@ -13,16 +14,6 @@ class App extends Component {
   render() {
     return (
       <UserProvider>
-        {/* <BrowserRouter>
-          <Fragment>
-            <Route path="/" component={NavBar}/>
-            <Switch>
-              <Route path="/itadakimasu" component={Home} exact />
-              <Route path="/recipe" component={RecipeDetailsPage} />
-              <Route component={PageNotFound} />
-            </Switch>
-          </Fragment>
-        </BrowserRouter> */}
         <>
         <Router history={history}>
             <Switch >
@@ -35,6 +26,7 @@ class App extends Component {
             <Switch >
               <Route path="/itadakimasu" component={Home} exact />
               <Route path="/recipe/:id" component={RecipeDetailsPage} />
+              <Route path="/allrecipes" component={AllRecipesPage} />
               <Route component={PageNotFound} />
             </Switch>
         </Router>
