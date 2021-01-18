@@ -3,6 +3,9 @@ import React from 'react';
 import CardIngredients from './CardIngredients/CardIngredients'
 import StarRating from './StarRating/StarRating'
 import classes from './RecipeCard.module.css';
+import firebase from 'firebase/app';
+import 'firebase/database';
+import { Link  } from 'react-router-dom'
 
 const RecipeCard = ( props ) => {
     const [recipeName,setrecipeName] = React.useState("None");
@@ -23,31 +26,41 @@ const RecipeCard = ( props ) => {
             setrecipeStars(Math.floor(props.recipedata["totalratings"]/props.recipedata["ratingsrecived"]));
             settopIngredientsList(Object.keys(props.recipedata["ingredients"]).slice(0,3));
             setrecipeCoverImage(props.recipedata["coverimg"]);
-            setAuthorName("Temp2");
-            setAuthorPicture(props.recipedata["coverimg"]);
             setFoodType(foodTypeParser[props.recipedata["type"]]);
+            const fetchData = async () => {
+                const db = firebase.database();
+                let data = await db.ref("users/"+props.recipedata['authorId']).once('value');
+                data = data.val();
+                if(data){
+                    setAuthorName(data['displayName']);
+                    setAuthorPicture(data['profilePicture']);
+                }
+            }
+            fetchData();
         }
     },[props.recipedata])
 
     return(
-        <div className={classes.card} style={{backgroundImage: `url(`+recipeCoverImage+`)`}}>
-            <div className={classes.FoodTypeLabel} style={{backgroundImage: `url(`+foodType+`)`}}></div>
-            <div className={classes.greyTranslucentSection}>
-                <strong className={classes.recipetitle}>{recipeName}</strong>
-                <div className={classes.starlist}>
-                    <StarRating stars={recipeStars}></StarRating>
-                </div>
-                <div className={classes.ingredientslist}>
-                    <CardIngredients ingedients={topIngredientsList} ></CardIngredients>
-                </div>
-                <div className={classes.ppandname}>
-                    <div className="row">
-                        <div className={classes.profilepicture} style={{backgroundImage: `url(`+authorPicture+`)`}}></div>
-                        <strong className={classes.profilename}>{authorName}</strong>
+        <Link to={"/recipe/" + props.recipeId}>
+            <div className={classes.card} style={{backgroundImage: `url(`+recipeCoverImage+`)`}}>
+                <div className={classes.FoodTypeLabel} style={{backgroundImage: `url(`+foodType+`)`}}></div>
+                <div className={classes.greyTranslucentSection}>
+                    <strong className={classes.recipetitle}>{recipeName}</strong>
+                    <div className={classes.starlist}>
+                        <StarRating stars={recipeStars}></StarRating>
+                    </div>
+                    <div className={classes.ingredientslist}>
+                        <CardIngredients ingedients={topIngredientsList} ></CardIngredients>
+                    </div>
+                    <div className={classes.ppandname}>
+                        <div className="row">
+                            <div className={classes.profilepicture} style={{backgroundImage: `url(`+authorPicture+`)`}}></div>
+                            <strong className={classes.profilename}>{authorName}</strong>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 

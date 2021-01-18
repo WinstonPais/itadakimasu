@@ -1,0 +1,28 @@
+.makeinline {
+    display: inline-block;
+}
+
+.profilepicture {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.verticalCenter {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.leftIngredientsContainer{
+    background-color: rgb(32, 30, 30);
+}
+
+.leftIngredientsTopDetailsContainer{
+    background-color: rgb(39, 209, 221);
+    clip-path: polygon(0 0,90% 0,70% 100%, 0 100%);
+}
