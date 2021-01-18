@@ -1,0 +1,45 @@
+.ig{
+    width: 100%;
+    filter: brightness(50%);
+    height: 70vh;
+}
+
+.centered{
+    color: blanchedalmond;
+    position: absolute;
+    font-size: 3.5vw;
+    font-family: cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container1{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bm{
+    position: relative;
+    margin-bottom: 4em;
+}
+
+.h2text{
+    color: white;
+}
+
+.form1{
+    color: white;
+    margin-bottom: 4em;
+}
+
+.title,.description,.file1,.radio,.submit,.Ingredients,.addIng{
+    margin-left: 20vw;
+    margin-right: 20vw;
+
+}
+
+.addIng{
+    margin-bottom: 1em;
+}

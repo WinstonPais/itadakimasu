@@ -17,7 +17,7 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
-    "reactstrap": "^8.8.0",
+    "reactstrap": "^8.8.1",
     "semantic-ui-react": "^2.0.2",
     "web-vitals": "^0.2.4"
   },
