@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/itadakimasu/static/css/main.78213f17.chunk.css",
-    "main.js": "/itadakimasu/static/js/main.48dd9cb8.chunk.js",
-    "main.js.map": "/itadakimasu/static/js/main.48dd9cb8.chunk.js.map",
-    "runtime-main.js": "/itadakimasu/static/js/runtime-main.e376ee35.js",
-    "runtime-main.js.map": "/itadakimasu/static/js/runtime-main.e376ee35.js.map",
+    "main.css": "/itadakimasu/static/css/main.4299941b.chunk.css",
+    "main.js": "/itadakimasu/static/js/main.4b038a4e.chunk.js",
+    "main.js.map": "/itadakimasu/static/js/main.4b038a4e.chunk.js.map",
+    "runtime-main.js": "/itadakimasu/static/js/runtime-main.1e028902.js",
+    "runtime-main.js.map": "/itadakimasu/static/js/runtime-main.1e028902.js.map",
     "static/css/2.a1da8d8b.chunk.css": "/itadakimasu/static/css/2.a1da8d8b.chunk.css",
-    "static/js/2.b577e6b8.chunk.js": "/itadakimasu/static/js/2.b577e6b8.chunk.js",
-    "static/js/2.b577e6b8.chunk.js.map": "/itadakimasu/static/js/2.b577e6b8.chunk.js.map",
-    "static/js/3.b66ae589.chunk.js": "/itadakimasu/static/js/3.b66ae589.chunk.js",
-    "static/js/3.b66ae589.chunk.js.map": "/itadakimasu/static/js/3.b66ae589.chunk.js.map",
+    "static/js/2.faace948.chunk.js": "/itadakimasu/static/js/2.faace948.chunk.js",
+    "static/js/2.faace948.chunk.js.map": "/itadakimasu/static/js/2.faace948.chunk.js.map",
+    "static/js/3.f3a09859.chunk.js": "/itadakimasu/static/js/3.f3a09859.chunk.js",
+    "static/js/3.f3a09859.chunk.js.map": "/itadakimasu/static/js/3.f3a09859.chunk.js.map",
     "index.html": "/itadakimasu/index.html",
     "static/css/2.a1da8d8b.chunk.css.map": "/itadakimasu/static/css/2.a1da8d8b.chunk.css.map",
-    "static/css/main.78213f17.chunk.css.map": "/itadakimasu/static/css/main.78213f17.chunk.css.map",
-    "static/js/2.b577e6b8.chunk.js.LICENSE.txt": "/itadakimasu/static/js/2.b577e6b8.chunk.js.LICENSE.txt",
+    "static/css/main.4299941b.chunk.css.map": "/itadakimasu/static/css/main.4299941b.chunk.css.map",
+    "static/js/2.faace948.chunk.js.LICENSE.txt": "/itadakimasu/static/js/2.faace948.chunk.js.LICENSE.txt",
     "static/media/1.2bfa84b1.jpg": "/itadakimasu/static/media/1.2bfa84b1.jpg",
     "static/media/2.ef566305.jpg": "/itadakimasu/static/media/2.ef566305.jpg",
     "static/media/3.71c51b0c.jpg": "/itadakimasu/static/media/3.71c51b0c.jpg",
@@ -28,16 +28,17 @@
     "static/media/image2.307c28de.jpg": "/itadakimasu/static/media/image2.307c28de.jpg",
     "static/media/image3.ba6f82c3.jpg": "/itadakimasu/static/media/image3.ba6f82c3.jpg",
     "static/media/logo.8c084263.png": "/itadakimasu/static/media/logo.8c084263.png",
+    "static/media/makerecipes.e4fb2c72.png": "/itadakimasu/static/media/makerecipes.e4fb2c72.png",
     "static/media/plate.c7cb6d38.svg": "/itadakimasu/static/media/plate.c7cb6d38.svg",
     "static/media/receipesbg.0f5fdc31.jpg": "/itadakimasu/static/media/receipesbg.0f5fdc31.jpg",
     "static/media/styles.css": "/itadakimasu/static/media/revicons.e8746a62.woff",
     "static/media/StarRating.module.css": "/itadakimasu/static/media/star.5f286924.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e376ee35.js",
+    "static/js/runtime-main.1e028902.js",
     "static/css/2.a1da8d8b.chunk.css",
-    "static/js/2.b577e6b8.chunk.js",
-    "static/css/main.78213f17.chunk.css",
-    "static/js/main.48dd9cb8.chunk.js"
+    "static/js/2.faace948.chunk.js",
+    "static/css/main.4299941b.chunk.css",
+    "static/js/main.4b038a4e.chunk.js"
   ]
 }
