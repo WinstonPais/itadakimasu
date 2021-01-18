@@ -9,37 +9,62 @@ import firebase from 'firebase/app';
 import 'firebase/database';
 
 const AllRecipesPage = () => {
-    const [allrecipeKeys, setRecipeKeys] = React.useState(null);
+    let [allrecipeKeys, setRecipeKeys] = React.useState(null);
     let [allrecipeJson, setRecipeJson] = React.useState(null);
     const [allrecipeJsonlength , setallrecipeJsonlength ] = React.useState(0);
+    const [didInitializeOnce,setDidInitializeOnce] = React.useState(false);
     let counter = 0
-    // const [ rowCountArray , setRowCountArray ] = React.useState([]);
     const updateAfterSearch = () =>{
         const namerep = document.getElementById('search').value;
-        const listrecip = []
-        if(namerep in allrecipeJson){
-            console.log("Hello")
-        }
+        setRecipeKeys(() => {
+            let temp = []
+            Object.keys(allrecipeJson).forEach((recipeIdT)=>{
+                if(allrecipeJson[recipeIdT]['Name'].toLowerCase().includes(namerep.toLowerCase())){
+                    // console.log(allrecipeJson[recipeIdT]['Name'])
+                    // console.log(recipeIdT)
+                    temp.push(recipeIdT)
+                }
+            })
+            setallrecipeJsonlength(temp.length)
+            return temp
+        })
+        
+        
     }
     React.useEffect(() => {
         const fetchData = async () => {
-            const db = firebase.database();
-            let data = await db.ref("recipes").once('value');
-            data=data.val();
-            setRecipeJson(data);
-            const reciparr=Object.keys(data);
-            // [[data['user1rep'],data['user2rep'],data['user3rep']],[data['user4rep'],data['user5rep'],data['user6rep']]];
-            setRecipeKeys(reciparr)
-            setallrecipeJsonlength(reciparr.length);
-            // setRowCountArray(Array(Math.ceil(allrecipeJsonlength/3)).fill(0));
-            // for(let i=0;i<temp.length;i++){
-            //     temp[i]=i;
-            // }
-            // console.log(temp)
+            if(!didInitializeOnce){
+                const db = firebase.database();
+                let data = await db.ref("recipes").once('value');
+                data=data.val();
+                setRecipeJson(data);
+                const reciparr=Object.keys(data);
+                setRecipeKeys(reciparr)
+                setallrecipeJsonlength(reciparr.length);
+            }
+            console.log(allrecipeKeys)
+            
+            setDidInitializeOnce(true)
             
         }
         fetchData();
-    }, [allrecipeJsonlength])
+    }, [allrecipeJsonlength,allrecipeKeys,didInitializeOnce])
+
+    const RenderCard = () => {
+        // console.log("came Here")
+        counter +=1 
+        if (allrecipeJson){
+            if (counter<=allrecipeJsonlength){
+                return <RecipeCard recipedata={allrecipeJson[allrecipeKeys[counter-1]]}/>
+            }
+            else{
+                return null
+            }
+        }
+        else{
+            return <RecipeCard recipedata={null}/>
+        }
+    }
 
 
     return(
@@ -68,8 +93,11 @@ const AllRecipesPage = () => {
                                         <Col key={itemi+itemj} 
                                             xs="12" 
                                             md="4" >
-                                                { allrecipeJson ? <RecipeCard recipedata={allrecipeJson[allrecipeKeys[counter]]}/> : <RecipeCard recipedata={null}/> }
-                                                {counter += 1}
+                                                {/* {console.log(counter)}
+                                                {console.log(allrecipeJsonlength)} */}
+                                                {RenderCard()}
+                                                {/* { allrecipeJson && counter<allrecipeJsonlength ? <RecipeCard recipedata={allrecipeJson[allrecipeKeys[counter]]}/> : <RecipeCard recipedata={null}/>  } */}
+                                                
                                         </Col>
                                     )
                                 })}
