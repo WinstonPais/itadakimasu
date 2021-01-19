@@ -29,7 +29,7 @@ const MakeRecipesPage = () => {
             Name: name,
             PrepTime: document.getElementById('PrepTime').value,
             Servings: document.getElementById('Serving').value,
-            authorId:user.uid,
+            authorId: user.uid,
             coverimg:"https://firebasestorage.googleapis.com/v0/b/itadakimasu-development.appspot.com/o/Recepies%2Fchicken-lollipop-recipe10-compressed.jpg?alt=media&token=a2997024-4fb8-42c2-bb6a-9f1f1328444c",
             description:desc,
             ingredients:{

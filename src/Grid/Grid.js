@@ -13,7 +13,7 @@ const Grid = (props) => {
     React.useEffect(() => {
         const fetchData = async () => {
             const db = firebase.database();
-            let data = await db.ref('recipes').limitToFirst(6).once('value');
+            let data = await db.ref('recipes').once('value');
             data=data.val();
             console.log(data);
             const reciparr=[
@@ -39,6 +39,7 @@ const Grid = (props) => {
                                 <Col key={itemi+itemj} 
                                     xs="12" 
                                     md="4" >
+                                        {console.log(allrecipeJson)}
                                         { allrecipeJson ? <RecipeCard recipeId={featuredRecipeIds[itemi][itemj]} recipedata={allrecipeJson[itemi][itemj]}/> : <RecipeCard recipeId={null} recipedata={null}/> }
                                         
                                 </Col>
