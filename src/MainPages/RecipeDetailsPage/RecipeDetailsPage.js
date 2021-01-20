@@ -127,7 +127,21 @@ const RecipeDetailsPage = () => {
                     </Col>
                 </Row>
                 <div style={{marginTop:'8em'}}>
-                    <CommentsMain rId={recipeId} commentdata={allComments} />
+                    <Row>
+                        <Col md="7">
+                            <CommentsMain rId={recipeId} commentdata={allComments} />
+                        </Col>
+                        <Col md="5">
+                            <h3 style={{marginBottom:"1em"}}>Grocery Shops Close to me</h3>
+                            <iframe
+                            width="100%"
+                            height="100%"
+                            frameborder="0" style={{border:"0"}}
+                            src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDwNoCvdev9LYCoC89gBc-ONHhjDXdh0Ik&q=grocery+shops+close+to+me" allowfullscreen>
+                            </iframe>
+                        </Col>
+                    </Row>
+                    
                 </div>
                 
             </div>

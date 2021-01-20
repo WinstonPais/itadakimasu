@@ -14,6 +14,7 @@ import { signInWithGoogle, logOut } from "./../firebase.config";
 import { UserContext } from '../contexts/UserProvider';
 import firebase from 'firebase/app';
 import 'firebase/database';
+import { Link } from 'react-router-dom';
 
 const NavBar = ( props ) => {
     const user = useContext(UserContext);
@@ -59,10 +60,10 @@ const NavBar = ( props ) => {
     return(
       <Fragment>
         <Navbar fixed="top" className={navbar ? [classes.navbarcustom,classes.navbarActive].join(' ') : classes.navbarcustom} dark expand="md">
-          <a className={"navbar-brand "+classes.anchorParent} href="https://winstonpais.github.io/itadakimasu/">
+          <Link className={"navbar-brand "+classes.anchorParent} to="/itadakimasu">
               <img src={NavBarLogo} width="90vw" height="90vh" className={"d-inline-block align-top "+ classes.imageMargin} alt=""/>
               <span className={[classes.anchorChildren,classes.anchorspan].join(' ')}>Itadakimasu</span>
-          </a>
+          </Link>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className={"ml-auto "+classes.MainNav} navbar>
@@ -73,7 +74,7 @@ const NavBar = ( props ) => {
                 <NavLink className={classes.linktextColor} href="/allrecipes">Recipes</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={classes.linktextColor} href="/itadakimasu">Contact</NavLink>
+                <NavLink className={classes.linktextColor} href="/contact">Contact</NavLink>
               </NavItem>
               <NavItem>
                   { isUserAuth ? LogoutButton : loginButton }
