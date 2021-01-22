@@ -73,7 +73,7 @@ const NavBar = ( props ) => {
                 <NavLink className={classes.linktextColor} href="/allrecipes">Recipes</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className={classes.linktextColor} href="/itadakimasu">Contact</NavLink>
+                <NavLink className={classes.linktextColor} href="/contact">Contact</NavLink>
               </NavItem>
               <NavItem>
                   { isUserAuth ? LogoutButton : loginButton }
