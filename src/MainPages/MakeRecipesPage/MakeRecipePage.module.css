@@ -34,10 +34,17 @@
     margin-bottom: 4em;
 }
 
-.title,.description,.file1,.radio,.submit,.Ingredients,.addIng{
-    margin-left: 20vw;
-    margin-right: 20vw;
+.title,.description,.file1,.radio,.Ingredients,.fileUpload,.addIng{
+    margin-left: 10vw !important;
+    margin-right: 10vw !important;
+    margin-bottom: 5vh;
+}
 
+.submit{
+    margin:0 auto;
+    display:block !important;
+    height: 6vh;
+    width: 8vw;
 }
 
 .addIng{
