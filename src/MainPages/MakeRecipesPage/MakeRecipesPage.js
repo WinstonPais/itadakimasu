@@ -14,7 +14,6 @@ const MakeRecipesPage = () => {
     const user = useContext(UserContext);
     const [foodType,setFoodType] =  React.useState('NonVeg');
     const [imageAsFile, setImageAsFile] = React.useState('')
-    const [imageAsUrl, setImageAsUrl] = React.useState('https://firebasestorage.googleapis.com/v0/b/itadakimasu-development.appspot.com/o/defaultfoodcover.jpg?alt=media&token=70f5b7a3-45f8-4a8a-b85d-cf99b13c4e87')
     const [numberOfIngredients, setNumberOfIngredients] = React.useState(1)
     const [ingredientRows, changeIngredientRows] = React.useState([])
     let history = useHistory();
@@ -32,7 +31,6 @@ const MakeRecipesPage = () => {
     const getIngredientsJson = () =>{
         let resJson = {}
         const listOfForms = document.getElementById('ingredients').children;
-        // console.log(listOfForms)
         for(var i =0;i<listOfForms.length;i++){
             const temp = listOfForms[i].firstElementChild.firstElementChild.children;
             const key = temp[0].firstElementChild.value
@@ -58,26 +56,27 @@ const MakeRecipesPage = () => {
                 .child(imageAsFile.name)
                 .getDownloadURL()
                 .then(fireBaseUrl => {
-                    setImageAsUrl(fireBaseUrl);
+                    const rId = Math.floor( Date.now() / 1000 )+user.uid  
+                    firebase.database().ref('recipes/' + rId ).set({
+                        CookTime: document.getElementById('cookingTime').value,
+                        Name: document.getElementById('title').value,
+                        PrepTime: document.getElementById('PrepTime').value,
+                        Servings: document.getElementById('Serving').value,
+                        authorId: user.uid,
+                        coverimg: fireBaseUrl,
+                        description: document.getElementById('description').value,
+                        ingredients: getIngredientsJson(),
+                        ratingsrecived: 10,
+                        totalratings: 42,
+                        type: foodType
+
+                    });
+                    history.push('/recipe/'+rId);
                 })
             }
         )
-        const rId = Math.floor( Date.now() / 1000 )+user.uid
-        firebase.database().ref('recipes/' + rId ).set({
-            CookTime: document.getElementById('cookingTime').value,
-            Name: document.getElementById('title').value,
-            PrepTime: document.getElementById('PrepTime').value,
-            Servings: document.getElementById('Serving').value,
-            authorId: user.uid,
-            coverimg: imageAsUrl,
-            description: document.getElementById('description').value,
-            ingredients: getIngredientsJson(),
-            ratingsrecived: 10,
-            totalratings: 42,
-            type: foodType
-
-        });
-        history.push('/recipe/'+rId);
+        
+        
     }
 
     function* times(x) {
