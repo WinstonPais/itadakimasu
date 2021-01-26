@@ -86,44 +86,24 @@ const MakeRecipesPage = () => {
     }
 
     React.useEffect(() => {
-        changeIngredientRows(() => {
-            let ing = [...ingredientRows];
-            // if(ing.length < numberOfIngredients){
+        let ing = [...ingredientRows];
+        if(ing.length < numberOfIngredients){
+            changeIngredientRows(() => {
                 for (let i of times(numberOfIngredients - ing.length)) {
                     const val = i+""+Math.floor( Date.now() / 100 )
                     ing.push(<Ingredients 
-                    //     deleteHandler={(val) =>{
-                    //     let ing = [...ingredientRows];
-                    //     let res = [];
-                    //     console.log(ing.length)
-                    //     for(let i=0 ;i<ing.length;i++){
-                    //         if(!(val === ing[i]["key"])){
-                    //             res.push(ing[i])
-                    //         }
-                    //         console.log("hello")
-                    //     }
-                    //     changeIngredientRows(res)
-                    //     setNumberOfIngredients(numberOfIngredients-1)
-                    //     // console.log(ingredientRows)
-                    // }} 
                     key={val} />);
                 }
-            // }
-            
-            return ing
-        })
-    }, [numberOfIngredients])
+                
+                return ing
+            })
+        }
+        
+    }, [numberOfIngredients,ingredientRows])
 
     const addIngredientRows = () =>{
         setNumberOfIngredients(numberOfIngredients+1)
     }
-
-    // const removeIngredientRow = (idx) =>{
-    //     let ing = [...ingredientRows];
-    //     for(let i=0 ;i<ing.length;i++){
-    //         console.log(ing[i]);
-    //     }
-    // }
 
     return (
         <Fragment>
