@@ -42,7 +42,6 @@ const AllRecipesPage = () => {
                 setRecipeKeys(reciparr)
                 setallrecipeJsonlength(reciparr.length);
             }
-            console.log(allrecipeKeys)
             
             setDidInitializeOnce(true)
             
@@ -55,7 +54,7 @@ const AllRecipesPage = () => {
         counter +=1 
         if (allrecipeJson){
             if (counter<=allrecipeJsonlength){
-                return <RecipeCard key={Date()} recipedata={allrecipeJson[allrecipeKeys[counter-1]]}/>
+                return <RecipeCard key={Date()} recipeId={allrecipeKeys[counter-1]} recipedata={allrecipeJson[allrecipeKeys[counter-1]]}/>
             }
             else{
                 return null

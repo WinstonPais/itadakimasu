@@ -15,7 +15,6 @@ const Grid = (props) => {
             const db = firebase.database();
             let data = await db.ref('recipes').once('value');
             data=data.val();
-            console.log(data);
             const reciparr=[
                 [data['user1rep'],data['user2rep'],data['user3rep']],
                 [data['user4rep'],data['user5rep'],data['user6rep']]
@@ -39,7 +38,6 @@ const Grid = (props) => {
                                 <Col key={itemi+itemj} 
                                     xs="12" 
                                     md="4" >
-                                        {console.log(allrecipeJson)}
                                         { allrecipeJson ? <RecipeCard recipeId={featuredRecipeIds[itemi][itemj]} recipedata={allrecipeJson[itemi][itemj]}/> : <RecipeCard recipeId={null} recipedata={null}/> }
                                         
                                 </Col>
