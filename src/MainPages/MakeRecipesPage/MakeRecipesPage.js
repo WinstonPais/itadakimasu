@@ -5,7 +5,7 @@ import Footer from './../../footer/footer';
 import classes from './MakeRecipePage.module.css';
 import createbg from './makerecipes.png';
 import { useHistory } from 'react-router';
-// import Ingredients from './Ingredients/Ingredients';
+import Ingredients from './Ingredients/Ingredients';
 import firebase from 'firebase/app';
 import 'firebase/database';
 import 'firebase/storage';
@@ -15,6 +15,8 @@ const MakeRecipesPage = () => {
     const [foodType,setFoodType] =  React.useState('NonVeg');
     const [imageAsFile, setImageAsFile] = React.useState('')
     const [imageAsUrl, setImageAsUrl] = React.useState('https://firebasestorage.googleapis.com/v0/b/itadakimasu-development.appspot.com/o/defaultfoodcover.jpg?alt=media&token=70f5b7a3-45f8-4a8a-b85d-cf99b13c4e87')
+    const [numberOfIngredients, setNumberOfIngredients] = React.useState(1)
+    const [ingredientRows, changeIngredientRows] = React.useState([])
     let history = useHistory();
 
     const handleImageAsFile = (e) => {
@@ -25,6 +27,19 @@ const MakeRecipesPage = () => {
     
     const setFType = (event) =>{
         setFoodType(event.target.value)
+    }
+
+    const getIngredientsJson = () =>{
+        let resJson = {}
+        const listOfForms = document.getElementById('ingredients').children;
+        // console.log(listOfForms)
+        for(var i =0;i<listOfForms.length;i++){
+            const temp = listOfForms[i].firstElementChild.firstElementChild.children;
+            const key = temp[0].firstElementChild.value
+            const value = temp[1].firstElementChild.value+" "+temp[2].firstElementChild.value
+            resJson[key]=value;
+        }
+        return resJson;
     }
 
     const addRecipeToFireBase = async () => {
@@ -56,9 +71,7 @@ const MakeRecipesPage = () => {
             authorId: user.uid,
             coverimg: imageAsUrl,
             description: document.getElementById('description').value,
-            ingredients:{
-                "Chicken legs":"500g","Cornflour":"4 tbsp","Oil":"500 ml","Chilli Powder":"4 tbsp","Eggs":"1 nos"
-            },
+            ingredients: getIngredientsJson(),
             ratingsrecived: 10,
             totalratings: 42,
             type: foodType
@@ -66,6 +79,51 @@ const MakeRecipesPage = () => {
         });
         history.push('/recipe/'+rId);
     }
+
+    function* times(x) {
+        for (var i = 0; i < x; i++)
+          yield i;
+    }
+
+    React.useEffect(() => {
+        changeIngredientRows(() => {
+            let ing = [...ingredientRows];
+            // if(ing.length < numberOfIngredients){
+                for (let i of times(numberOfIngredients - ing.length)) {
+                    const val = i+""+Math.floor( Date.now() / 100 )
+                    ing.push(<Ingredients 
+                    //     deleteHandler={(val) =>{
+                    //     let ing = [...ingredientRows];
+                    //     let res = [];
+                    //     console.log(ing.length)
+                    //     for(let i=0 ;i<ing.length;i++){
+                    //         if(!(val === ing[i]["key"])){
+                    //             res.push(ing[i])
+                    //         }
+                    //         console.log("hello")
+                    //     }
+                    //     changeIngredientRows(res)
+                    //     setNumberOfIngredients(numberOfIngredients-1)
+                    //     // console.log(ingredientRows)
+                    // }} 
+                    key={val} />);
+                }
+            // }
+            
+            return ing
+        })
+    }, [numberOfIngredients])
+
+    const addIngredientRows = () =>{
+        setNumberOfIngredients(numberOfIngredients+1)
+    }
+
+    // const removeIngredientRow = (idx) =>{
+    //     let ing = [...ingredientRows];
+    //     for(let i=0 ;i<ing.length;i++){
+    //         console.log(ing[i]);
+    //     }
+    // }
 
     return (
         <Fragment>
@@ -119,12 +177,14 @@ const MakeRecipesPage = () => {
                         </FormGroup>
                     </Col>
                 </Row>
-                {/* <FormGroup >
-                    <Label className={classes.Ingredients} for="Ingredients"><h1>Ingredient</h1></Label>
-                    <Button onClick={AddIngredientTextFeilds} className={classes.addIng} color="warning">Add Ingredient</Button>
-                    <Ingredients/>
-                </FormGroup> */}
-                <FormGroup style={{paddingLeft:'15px',paddingRight:'15px'}} className={classes.fileUpload}>
+                <FormGroup  style={{paddingLeft:'15px',paddingRight:'15px'}} className={classes.Ingredients} >
+                    <Label for="Ingredients"><h1>Ingredients</h1></Label> <br />
+                    <Button style={{margin:'1em',marginBottom:'2em'}} onClick={addIngredientRows} color="warning">Add Ingredient</Button>
+                    <div id="ingredients">
+                        {ingredientRows}
+                    </div>
+                </FormGroup>
+                <FormGroup style={{paddingLeft:'15px',paddingRight:'15px',marginTop:'2em'}} className={classes.fileUpload}>
                     <Label for="exampleFile"><h1>Cover Image</h1></Label>
                     <Input onChange={handleImageAsFile} type="file" name="file" id="exampleFile" />
                 </FormGroup>

@@ -1,20 +1,22 @@
-import React, { Fragment } from 'react';
-import { Row,Col,Container,Form, FormGroup,FormText,Button, Label, Input } from 'reactstrap';
-import classes from './Ingredients.module.css';
+import React from 'react';
+import { Row,Col,Form, FormGroup, Input } from 'reactstrap';
+// import classes from './Ingredients.module.css';
 
-const Ingredients = () => {
+const Ingredients = (props) => {
     return(
-        <Form className={classes.form2}>
+        <Form >
             <FormGroup>
-            <Row className={classes.form2}>
-                <Col>
-                <Input type="text" className={classes.text1} name="Ingredient" id="Ingredient" placeholder="Enter the Ingredient" />
+            <Row >
+                <Col md="5">
+                <Input type="text" name="Ingredient" placeholder="Enter the Ingredient" />
                 </Col>
-                <Col>
-                <Input type="text" className={classes.text2} name="Quantity" id="Quantity" placeholder="Enter the Qunatity" />
+                <Col md="3">
+                <Input type="text" name="Quantity"  placeholder="Enter the Qunatity" />
                 </Col>
-                <Col>
-                <Input type="text" className={classes.text3} name="Unit" id="Unit" placeholder="Enter the Unit" />
+                <Col md="3">
+                <Input type="text" name="Unit" placeholder="Enter the Unit" />
+                </Col>
+                <Col md="1">
                 </Col>
             </Row>
             </FormGroup>
